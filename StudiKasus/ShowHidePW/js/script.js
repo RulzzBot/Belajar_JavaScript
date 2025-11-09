@@ -15,3 +15,5 @@ hide.addEventListener("click", ()=>{
     hide.classList.add("hidden")
     input.setAttribute("type", "password")
 })
+
+console.log("Hallo World")
