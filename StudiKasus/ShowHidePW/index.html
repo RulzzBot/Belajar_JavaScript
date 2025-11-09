@@ -8,6 +8,12 @@
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 
+        <style>
+            .icon{
+                cursor: pointer !important;
+            }
+        </style>
+
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500">
@@ -17,10 +23,10 @@
             <div class="flex flex-col items-center mt-5 ">
                 <form class="m-1 p-1 text-white space-y-5 ">
                     <input type="text" class="bg-white/20 backdrop-blur-lg w-80 p-2 rounded-2xl  text-white border border-gray-800" id="Email" placeholder="Enter Email">
-                    <div class="flex  justify-center items-center ">
+                    <div class="flex  justify-center items-center position-relative">
                         <input type="password" class="bg-white/20 backdrop-blur-lg w-80 p-2 rounded-2xl border border-gray-800 text-white" id="password" placeholder="Enter Password">
-                        <i class="fa-solid fa-eye absolute right-12" id="show"></i>
-                        <i class="fa-solid fa-eye-slash absolute right-12 hidden" id="hide"></i>
+                        <i class="fa-solid fa-eye position-absolute start-100 end-100 icon" id="show" style="cursor: pointer;"></i>
+                        <i class="fa-solid fa-eye-slash hidden position-absolute start-100 end-100 icon" id="hide"style="cursor: pointer;"></i>
                     </div>
                     <div class="flex mt-4">
                         <input type="checkbox" name="remember" id="rmbr" class="mr-1 bg-white/20"> 
