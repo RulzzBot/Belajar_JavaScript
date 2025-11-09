@@ -17,3 +17,4 @@ hide.addEventListener("click", ()=>{
 })
 
 console.log("Hallo World")
+console.log("Test")
