@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <title>Document</title>
+    </head>
+    <body class="bg-black transition-all duration-500" id="body">
+        <div class="flex justify-center items-center h-screen">
+            <div class="w-32 border border-blue-500 h-12 p-1 rounded-full">
+                <div class="h-10 w-10 rounded-full bg-gray-800 cursor-pointer " id="malam"></div>
+                <div class="h-10 w-10 rounded-full bg-blue-500 cursor-pointer ml-19 hidden" id="pagi"></div>
+            </div>
+        </div>
+
+        <script>
+            let date = new Date();
+            let hours = date.getHours()
+            let body = document.getElementById("body");
+            let malam = document.getElementById("malam");
+            let pagi = document.getElementById("pagi");
+
+            malam.addEventListener("click", ()=> {
+                console.log("test malam")
+                body.classList.toggle("bg-black")
+                body.classList.toggle("bg-white")
+
+                malam.classList.toggle("hidden")
+                pagi.classList.toggle("hidden")
+            });
+
+            pagi.addEventListener("click", ()=> {
+                body.classList.toggle("bg-white");
+                body.classList.toggle("bg-black");
+
+                malam.classList.toggle("hidden")
+                pagi.classList.toggle("hidden")
+            })
+
+            if(hours > 18 || hours < 6){
+                
+                body.classList.add("bg-black")
+                body.classList.remove("bg-white")
+
+                malam.classList.toggle("hidden")
+                pagi.classList.toggle("hidden")
+            }else{
+                body.classList.remove("bg-black")
+                body.classList.add("bg-white")
+
+                malam.classList.remove("hidden")
+                pagi.classList.add("hidden")
+            }
+        </script>
+    </body>
+</html>

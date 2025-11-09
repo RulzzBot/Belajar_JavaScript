@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Statement</title>
+</head>
+<body>
+    <h1>If Statement</h1>
+    <script>
+        // exam 1
+        console.log("=== If statement")
+        let age = 18;
+        let country = "USA"
+        let text = "You can not drive";
+
+        if(age >= 18){
+            text = "You can drive car";
+        }
+
+        console.log(text)
+
+        // nested if
+        console.log("=== Nested If")
+        if(country == "USA"){
+            if(age >= 18){
+                text = "You can drive car";
+            }
+        }
+
+        console.log(text)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500">
+        <div class="max-w-sm w-full p-6 rounded-2xl bg-white/10 backdrop-blur-lg border border-white/20 shadow-2xl text-white">
+            <p class="text-3xl text-center font-bold">Welcome Back</p>
+            <p class="text-center text-gray-200 my-3">Sign To Your Account</p>
+            <div class="flex flex-col items-center mt-5 ">
+                <form class="m-1 p-1 text-white space-y-5 ">
+                    <input type="text" class="bg-white/20 backdrop-blur-lg w-80 p-2 rounded-2xl  text-white border border-gray-800" id="Email" placeholder="Enter Email">
+                    <div class="flex  justify-center items-center ">
+                        <input type="password" class="bg-white/20 backdrop-blur-lg w-80 p-2 rounded-2xl border border-gray-800 text-white" id="password" placeholder="Enter Password">
+                        <i class="fa-solid fa-eye absolute right-12" id="show"></i>
+                        <i class="fa-solid fa-eye-slash absolute right-12 hidden" id="hide"></i>
+                    </div>
+                    <div class="flex mt-4">
+                        <input type="checkbox" name="remember" id="rmbr" class="mr-1 bg-white/20"> 
+                        <label for="remember">Remember Me</label>
+                        <div class=""></div>
+                        <a href="#" class="text-right ml-auto text-blue-400">Forgot Password?</a>
+                    </div>
+                    <button type="button" class="btn bg-primary w-100 text-white rounded-4 p-2">Submit</button>
+                </form>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    </body>
+</html>

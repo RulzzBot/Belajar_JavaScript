@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary</title>
+</head>
+<body>
+    <h1>Ternary</h1>
+    <script>
+        let age = 17;
+        let text = (age >= 18) ? "Cukup" : "Kurang";
+        console.log(text)
+
+        // Create Simple Project Discount
+        let isMember =  prompt("Apakah Member (y/n): ")
+        let price = 10;
+        let discount = (isMember == "y") ? 0.2 : 0;
+        let total = 10 - (price * discount);
+        console.log(`Total Bayar ${total}`)
+    </script>
+</body>
+</html>

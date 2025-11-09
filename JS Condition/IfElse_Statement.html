@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else & Else If</title>
+</head>
+<body>
+    <h1>If Else Statement</h1>
+    <script>
+        // if else
+        console.log("=== If Else")
+        const hour = new Date().getHours();
+        let greeting;
+
+        if(hour >= 18){
+            greeting = "Good Night";
+        }else{
+            greeting = "Good Evening";
+        }
+        
+        console.log(hour)
+        console.log(greeting)
+        // if else
+        console.log("=== Else If")
+        const time = new Date().getHours();
+        if(time < 10){
+            greeting = "Good Morning"
+        }else if(time < 20){
+            greeting = "Good Day"
+        }else{
+            greeting = "Good Evening"
+        }
+
+        console.log(time)
+        console.log(greeting)
+
+        // ex if else 2
+        let text;
+        if(Math.random() < 0.5){
+            text = "Kurang dari 0.5"
+        }else{
+            text = "Lebih Dari 0.5"
+        }
+
+        console.log(text)
+        </script>
+</body>
+</html>

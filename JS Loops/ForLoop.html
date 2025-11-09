@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS For Loop</title>
+</head>
+<body>
+    <h1>For Loop</h1>
+    <script>
+        /*Syntax ForLoop
+            for(exp 1; exp 2; exp 3){
+                // Write code
+            }
+        */
+
+        // EX 1
+        for(let i = 0; i < 5; i++){
+            // index itu dimulai dari 0
+            console.log("Ini Nomor Urut ke-" + (i + 1));
+        }
+
+        // EX 2
+        // Perulangan For dari Array
+        // ada 2 cara
+        // Cara 1
+        //              0        1         2        3          4
+        const cars = ["BMW", "Avanza", "Volvo", "Bugatti", "Pajero"];
+        // let len = cars.length;
+
+        for(let i = 0; i < cars.length; i++){
+            console.log("Merek Mobil ke-" + (i + 1) + " " + cars[i]);
+        }
+
+        console.log(`Mobil Yang sudah sold : ${cars[1]}`);
+
+        
+    </script>
+</body>
+</html>

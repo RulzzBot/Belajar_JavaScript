@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop and Do While</title>
+</head>
+<body>
+    <h1>While Loop</h1>
+    <script>
+        /*
+        Syntax While 
+        while(condition){
+            Write code in here
+        }
+
+        for example the code in the loop will run, over and over again, as long as a variable (i) is less then 10
+        */
+       // ex 1
+        let i = 0;
+        while(i < 10){
+            console.log(`Urutan ke-${i}`); // Output akan dimulai dari urutan ke-0
+            i++
+        }
+
+        // Do While Loop
+        let b = 0
+        let text = ""
+        do{
+            text += `The Number is ${b}\n`
+            b++
+        }while(b < 6)
+
+        console.log(text)
+
+        // Ex Final
+        console.log("Final Ex")
+        const cars = ["BMW", "Avanza", "Lambo", "Bugatti"]
+        let x= 0;
+        while(cars[x]){
+            console.log(`Mobil ke${x + 1} adalah ${cars[x]}`)
+            x++
+        }
+</script>
+</body>
+</html>

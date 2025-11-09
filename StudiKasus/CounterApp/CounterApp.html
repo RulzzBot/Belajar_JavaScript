@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Counter App - JS 1</title>
+</head>
+<body class="bg-gray-300">
+    <!-- Pembungkus -->
+    <div class="h-screen flex items-center justify-center">
+        <!-- Box -->
+        <div class="w-md h-64 rounded bg-gray-100 shadow-xl p-5">
+            <!-- Number -->
+            <div class="text-center mt-5 border py-4 rounded">
+                <span id="num" class="text-3xl "></span>
+            </div>
+            <!-- Button + - -->
+            <div class="mt-10 flex justify-between w-full">
+                <button type="button" class="px-10 py-1 rounded shadow-lg shadow-red-500/50 bg-red-500 hover:bg-red-700 transition duration-200 text-2xl font-bold cursor-pointer" id="min">-</button>
+                <button type="button" class="px-10 py-2 rounded shadow-lg shadow-blue-500/50 bg-blue-500 hover:bg-blue-700  transition duration-200 text-2xl font-bold cursor-pointer " id="plus">+</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        let num = document.getElementById("num");
+        let btnPlus = document.getElementById("plus");
+        let btnMin = document.getElementById("min");
+
+        let angka = 0;
+        num.textContent = 0;
+
+        btnMin.addEventListener("click", ()=> {
+            angka--
+            if(angka < 0){
+                num.className = "text-3xl transition duration-200 text-red-500"
+            }
+            num.textContent = angka;
+            
+        })
+
+        btnPlus.addEventListener("click", ()=> {
+            angka++
+            if(angka >= 0){
+                num.className = "text-3xl transition duration-200 text-black"
+            }
+            num.textContent = angka;
+        })
+
+        
+    </script>
+</body>
+</html>
