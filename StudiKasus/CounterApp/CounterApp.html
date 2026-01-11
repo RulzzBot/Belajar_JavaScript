@@ -33,7 +33,7 @@
         num.textContent = 0;
 
         btnMin.addEventListener("click", ()=> {
-            angka--
+            angka-=100
             if(angka < 0){
                 num.className = "text-3xl transition duration-200 text-red-500"
             }
@@ -42,7 +42,7 @@
         })
 
         btnPlus.addEventListener("click", ()=> {
-            angka++
+            angka+=1000
             if(angka >= 0){
                 num.className = "text-3xl transition duration-200 text-black"
             }
