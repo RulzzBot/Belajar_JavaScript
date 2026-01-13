@@ -34,4 +34,4 @@ letter.forEach(function(value) {
     text += value + " ";
 })
 
-console.log(text); // Output: a b d e
+console.log(text); // Output: a b d e   
